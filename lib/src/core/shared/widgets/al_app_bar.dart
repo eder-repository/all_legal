@@ -2,11 +2,14 @@ import 'package:all_legal_ui/all_legal_ui.dart';
 import 'package:flutter/material.dart';
 
 class AlAppBar extends StatelessWidget implements PreferredSize {
-  const AlAppBar({super.key});
+  const AlAppBar({super.key, this.automaticallyImplyLeading = true});
+
+  final bool automaticallyImplyLeading;
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      automaticallyImplyLeading: automaticallyImplyLeading,
       title: Row(
         children: [
           const AlIcon(icon: AllLegalIcons.menu),

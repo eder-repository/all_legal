@@ -21,6 +21,8 @@ final class AlTheme {
   static const _lightGrayBlue = Palette.lightGrayishBlue;
   static const _black = Palette.black;
 
+  static const _moderateBlue = Palette.moderateBlue;
+
   static const _mostlyDesaturatedDarkBlue = Palette.mostlyDesaturatedDarkBlue;
 
   static const _lightGrayish = Palette.lightGrayish;
@@ -37,12 +39,12 @@ final class AlTheme {
     primaryColor: _verySoftBlue,
     secondaryHeaderColor: _veryDarkGrayishBlue,
     colorScheme: const ColorScheme.light(
-      onPrimary: _black,
-      primary: _darkGrayishBlue,
-      secondary: _darkCyan,
-      tertiary: _smokeGray,
-      onSecondary: _white,
-    ),
+        onPrimary: _black,
+        primary: _darkGrayishBlue,
+        secondary: _darkCyan,
+        tertiary: _smokeGray,
+        onSecondary: _white,
+        onSurface: _moderateBlue),
     appBarTheme: const AppBarTheme(
       backgroundColor: _lightGrayishCyan,
       elevation: 0,

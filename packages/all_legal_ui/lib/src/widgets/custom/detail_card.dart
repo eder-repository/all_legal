@@ -8,6 +8,7 @@ class DetailCard extends StatelessWidget {
     required this.prefixIcon,
     required this.title,
     required this.description,
+    this.onTap,
   });
 
   final Widget? suffixIcon;
@@ -15,10 +16,15 @@ class DetailCard extends StatelessWidget {
   final Widget prefixIcon;
   final String title;
   final String description;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = context.textTheme;
+    final colorScheme = context.colorScheme;
+    final theme = context.theme;
     return AlCard(
+      onPressed: onTap,
       shadow: false,
       padding: edgeInsets12,
       child: Row(
@@ -35,21 +41,27 @@ class DetailCard extends StatelessWidget {
                     children: [
                       Text(
                         title,
-                        style: context.textTheme.titleMedium?.copyWith(
-                          color: context.theme.colorScheme.tertiary,
+                        style: textTheme.titleMedium?.copyWith(
+                          color: theme.colorScheme.tertiary,
                         ),
                       ),
                       gap20,
                       Text(
                         description,
-                        style: context.textTheme.titleSmall?.copyWith(
+                        style: textTheme.titleSmall?.copyWith(
                           fontWeight: AppFontWeight.light,
                         ),
                       ),
                     ],
                   ),
                 ),
-                if (suffixIcon != null) suffixIcon!
+                if (suffixIcon != null)
+                  suffixIcon!
+                else
+                  Icon(
+                    Icons.chevron_right,
+                    color: colorScheme.tertiary.withOpacity(.5),
+                  ),
               ],
             ),
           ),

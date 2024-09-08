@@ -13,6 +13,11 @@ class Routes {
         path: '/home',
       );
 
+  static Routes get signDocuemnt => const Routes._(
+        name: 'SignDocument',
+        path: '/signDocument',
+      );
+
   // static String? redirect(String? fullPath) {
   //   if (fullPath == splash.path) {
   //     return home.path;

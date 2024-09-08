@@ -17,9 +17,13 @@ final class Palette {
   static const Color transparent = Colors.transparent;
   static const Color lightGrayishCyan = Color(0xFFF5FAFA);
 
+  static const Color softBlue = Color(0xFFF5FaFe);
+
   static const Color verySoftBlue = Color(0xFFB6D9ED);
 
   static const Color darkGrayishBlue = Color(0xFF919196);
 
   static const Color darkCyan = Color(0xFF60A6D6);
+
+  static const Color moderateBlue = Color(0xFF3C8CCD);
 }

@@ -11,6 +11,30 @@
       "css": "menu",
       "code": 59392,
       "src": "entypo"
+    },
+    {
+      "uid": "85ef733b1e280809e8443f5f0167b5c2",
+      "css": "doc",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "bd517dbd6ccbc464f6d80efca97abb7d",
+      "css": "doc-add",
+      "code": 59394,
+      "src": "typicons"
+    },
+    {
+      "uid": "9615c86e461b73ce2f1670aceff0b75d",
+      "css": "phonelink_lock",
+      "code": 59395,
+      "src": "material"
+    },
+    {
+      "uid": "016d5f3e7ccdce695b697869216ba80c",
+      "css": "vpn_lock",
+      "code": 59396,
+      "src": "material"
     }
   ]
 }

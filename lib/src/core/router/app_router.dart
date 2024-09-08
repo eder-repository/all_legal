@@ -26,6 +26,11 @@ class AppRouter {
             name: Routes.home.name,
             builder: HomeScreen.builder,
           ),
+          GoRoute(
+            path: Routes.signDocuemnt.path,
+            name: Routes.signDocuemnt.name,
+            builder: SignDocument.builder,
+          ),
         ],
         // redirect: (context, state) => Routes.redirect(state.fullPath),
       );

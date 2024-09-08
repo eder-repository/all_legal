@@ -1,14 +1,12 @@
 import 'package:all_legal_ui/all_legal_ui.dart';
-import 'package:all_legal_ui/src/extensions/extensions.dart';
-import 'package:all_legal_ui/src/layouts/layouts.dart';
-import 'package:all_legal_ui/src/typography/typography.dart';
 import 'package:flutter/material.dart';
 
 enum AlIconSize {
   small(12),
   medium(16),
   large(20),
-  bigger(24);
+  bigger(24),
+  bigBigger(40);
 
   const AlIconSize(this.size);
   final double size;

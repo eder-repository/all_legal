@@ -66,42 +66,38 @@ class HomeScreen extends StatelessWidget {
                             ),
                           ),
                           gap20,
-                          const DetailCard(
+                          DetailCard(
+                            onTap: () =>
+                                context.pushNamed(Routes.signDocuemnt.name),
                             title: 'Firmar Documentos',
                             description:
                                 'Firmar Documentos electronicos y solicita firma de terceros',
-                            prefixIcon: Icon(
-                              Icons.fiber_dvr,
-                              size: 40,
-                            ),
-                            suffixIcon: Icon(
-                              Icons.fiber_dvr,
+                            prefixIcon: AlIcon(
+                              icon: AllLegalIcons.doc,
+                              color: colorScheme.onSurface,
+                              size: AlIconSize.bigBigger,
                             ),
                           ),
                           gap20,
-                          const DetailCard(
-                            title: 'Firmar Documentos',
+                          DetailCard(
+                            title: 'Solicitudes de acceso a información',
                             description:
-                                'Firmar Documentos electronicos y solicita firma de terceros',
-                            prefixIcon: Icon(
-                              Icons.fiber_dvr,
-                              size: 40,
-                            ),
-                            suffixIcon: Icon(
-                              Icons.fiber_dvr,
+                                'Tienes 4 solicitudes de acceso a tu información personal',
+                            prefixIcon: AlIcon(
+                              icon: AllLegalIcons.doc_add,
+                              color: colorScheme.onSurface,
+                              size: AlIconSize.bigBigger,
                             ),
                           ),
                           gap20,
-                          const DetailCard(
-                            title: 'Firmar Documentos',
+                          DetailCard(
+                            title: 'Gestionar información personal',
                             description:
-                                'Firmar Documentos electronicos y solicita firma de terceros',
-                            prefixIcon: Icon(
-                              Icons.fiber_dvr,
-                              size: 40,
-                            ),
-                            suffixIcon: Icon(
-                              Icons.fiber_dvr,
+                                'Actualiza información, solicita acceso, rectificación, eliminación ',
+                            prefixIcon: AlIcon(
+                              icon: AllLegalIcons.phonelink_lock,
+                              color: colorScheme.onSurface,
+                              size: AlIconSize.bigBigger,
                             ),
                           ),
                         ],
