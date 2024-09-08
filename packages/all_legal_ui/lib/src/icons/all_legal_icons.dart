@@ -1,8 +1,8 @@
 import 'package:all_legal_ui/src/constants/package.dart';
 import 'package:flutter/widgets.dart';
 
-class AllLegal {
-  AllLegal._();
+class AllLegalIcons {
+  AllLegalIcons._();
 
   static const _kFontFam = 'AllLegal';
   static const String? _kFontPkg = AllLegalUI.package;

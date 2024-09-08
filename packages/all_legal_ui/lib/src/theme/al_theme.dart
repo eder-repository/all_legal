@@ -9,13 +9,14 @@ final class AlTheme {
   static const FlexSchemeData _gcFlexSchemeData = FlexSchemeData(
     name: 'All Legal Theme',
     description: 'All Legal Theme, custom definition of all colors',
-    light: FlexSchemeColor(primary: _midnightBlue, secondary: _white),
-    dark: FlexSchemeColor(primary: _midnightBlue, secondary: _white),
+    light: FlexSchemeColor(primary: _darkGrayishBlue, secondary: _white),
+    dark: FlexSchemeColor(primary: _darkGrayishBlue, secondary: _white),
   );
 
-  static const _midnightBlue = Palette.midnightBlue;
+  static const _darkGrayishBlue = Palette.darkGrayishBlue;
   static const _white = Palette.white;
-  static const _accent = Palette.accent;
+  static const _lightGrayishCyan = Palette.lightGrayishCyan;
+  static const _darkCyan = Palette.darkCyan;
   static const _smokeGray = Palette.smokeGray;
   static const _lightGrayBlue = Palette.lightGrayishBlue;
   static const _black = Palette.black;
@@ -26,21 +27,24 @@ final class AlTheme {
 
   static const _veryDarkGrayishBlue = Palette.veryDarkGrayishBlue;
 
+  static const _verySoftBlue = Palette.verySoftBlue;
+
   static final light = FlexThemeData.light(
     colors: _gcFlexSchemeData.light,
   ).copyWith(
-    scaffoldBackgroundColor: _white,
+    scaffoldBackgroundColor: _lightGrayishCyan,
     dividerColor: _lightGrayBlue,
+    primaryColor: _verySoftBlue,
     secondaryHeaderColor: _veryDarkGrayishBlue,
     colorScheme: const ColorScheme.light(
       onPrimary: _black,
-      primary: _midnightBlue,
-      secondary: _accent,
+      primary: _darkGrayishBlue,
+      secondary: _darkCyan,
       tertiary: _smokeGray,
-      onSecondary: _lightGrayish,
+      onSecondary: _white,
     ),
     appBarTheme: const AppBarTheme(
-      backgroundColor: _white,
+      backgroundColor: _lightGrayishCyan,
       elevation: 0,
       iconTheme: _iconTheme,
       titleSpacing: 0,
