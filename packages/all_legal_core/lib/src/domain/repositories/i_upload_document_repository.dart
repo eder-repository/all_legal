@@ -6,4 +6,10 @@ abstract class IUploadDocumentRepository {
   Future<List<PdfEntitie>> getSavedPDFs();
 
   Future<bool?> deletePdf(int index);
+
+  Future<bool?> saveSignature();
+
+  Future<List<PdfEntitie>> getSignature();
+
+  Future<bool?> deleteSignature(int index);
 }

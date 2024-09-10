@@ -18,15 +18,18 @@ class PdfEntitieAdapter extends TypeAdapter<PdfEntitie> {
     };
     return PdfEntitie(
       filePath: fields[0] as String,
+      pdfData: fields[1] as Uint8List,
     );
   }
 
   @override
   void write(BinaryWriter writer, PdfEntitie obj) {
     writer
-      ..writeByte(1)
+      ..writeByte(2)
       ..writeByte(0)
-      ..write(obj.filePath);
+      ..write(obj.filePath)
+      ..writeByte(1)
+      ..write(obj.pdfData);
   }
 
   @override

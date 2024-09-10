@@ -1,6 +1,4 @@
 import 'package:all_legal_ui/all_legal_ui.dart';
-import 'package:all_legal_ui/src/theme/palette.dart';
-import 'package:all_legal_ui/src/typography/typography.dart';
 import 'package:flutter/material.dart';
 
 final class TextStyles {
@@ -10,7 +8,7 @@ final class TextStyles {
     fontFamily: FontFamily.geist,
     fontWeight: AppFontWeight.regular,
     package: AllLegalUI.package,
-    color: Palette.white,
+    color: Palette.moderateBlue,
   );
 
   static final TextStyle _headlineLarge = _geistTextStyleBase.copyWith(
@@ -20,7 +18,7 @@ final class TextStyles {
   static final TextStyle _headlineMedium = _geistTextStyleBase.copyWith(
     fontSize: 32,
     fontWeight: AppFontWeight.bold,
-    color: Palette.midnightGray,
+    color: Palette.moderateBlue,
   );
 
   static final TextStyle _headlineSmall = _geistTextStyleBase.copyWith(

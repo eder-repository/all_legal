@@ -10,6 +10,7 @@ void main() async {
 
   // Inicializa Hive
   var appDocumentDir = await getApplicationDocumentsDirectory();
+
   await Hive.initFlutter(appDocumentDir.path);
 
   // Registra el adaptador generado automáticamente

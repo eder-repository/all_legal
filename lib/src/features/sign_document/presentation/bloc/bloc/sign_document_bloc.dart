@@ -16,6 +16,10 @@ class SignDocumentBloc extends Bloc<SignDocumentEvent, SignDocumentState> {
     on<_SavePdf>(_onSavePdf);
     on<_GetListPdf>(_onGetListPdf);
     on<_DeletePdf>(_onDeletePdf);
+    on<_SaveSignature>(_onSaveSignature);
+    on<_GetSignature>(_onGetSignature);
+    on<_DeleteSignature>(_onDeleteSignature);
+    on<_SelectedSignature>(_onSelectedSignature);
   }
 
   final IUploadDocumentRepository _iUploadDocumentRepository;
@@ -44,5 +48,34 @@ class SignDocumentBloc extends Bloc<SignDocumentEvent, SignDocumentState> {
     if (pdfs == true) {
       add(const SignDocumentEvent.getListPdf());
     }
+  }
+
+  Future<void> _onSaveSignature(
+      _SaveSignature event, Emitter<SignDocumentState> emit) async {
+    final result = await _iUploadDocumentRepository.saveSignature();
+    if (result == true) {
+      add(const SignDocumentEvent.getSignature());
+    }
+  }
+
+  Future<void> _onGetSignature(
+      _GetSignature event, Emitter<SignDocumentState> emit) async {
+    emit(state.copyWith(signatureStatus: SignatureStatus.loading));
+    final sign = await _iUploadDocumentRepository.getSignature();
+
+    emit(state.copyWith(signs: sign, signatureStatus: SignatureStatus.loaded));
+  }
+
+  Future<void> _onDeleteSignature(
+      _DeleteSignature event, Emitter<SignDocumentState> emit) async {
+    final signs = await _iUploadDocumentRepository.deleteSignature(event.index);
+    if (signs == true) {
+      add(const SignDocumentEvent.getSignature());
+    }
+  }
+
+  FutureOr<void> _onSelectedSignature(
+      _SelectedSignature event, Emitter<SignDocumentState> emit) {
+    emit(state.copyWith(selectedSignature: event.sign));
   }
 }

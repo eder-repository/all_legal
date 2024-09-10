@@ -21,6 +21,10 @@ mixin _$SignDocumentEvent {
     required TResult Function() savePdf,
     required TResult Function() getListPdf,
     required TResult Function(int index) deletePdf,
+    required TResult Function() saveSignature,
+    required TResult Function() getSignature,
+    required TResult Function(int index) deleteSignature,
+    required TResult Function(PdfEntitie sign) selectedSignature,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -28,6 +32,10 @@ mixin _$SignDocumentEvent {
     TResult? Function()? savePdf,
     TResult? Function()? getListPdf,
     TResult? Function(int index)? deletePdf,
+    TResult? Function()? saveSignature,
+    TResult? Function()? getSignature,
+    TResult? Function(int index)? deleteSignature,
+    TResult? Function(PdfEntitie sign)? selectedSignature,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -35,6 +43,10 @@ mixin _$SignDocumentEvent {
     TResult Function()? savePdf,
     TResult Function()? getListPdf,
     TResult Function(int index)? deletePdf,
+    TResult Function()? saveSignature,
+    TResult Function()? getSignature,
+    TResult Function(int index)? deleteSignature,
+    TResult Function(PdfEntitie sign)? selectedSignature,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -43,6 +55,10 @@ mixin _$SignDocumentEvent {
     required TResult Function(_SavePdf value) savePdf,
     required TResult Function(_GetListPdf value) getListPdf,
     required TResult Function(_DeletePdf value) deletePdf,
+    required TResult Function(_SaveSignature value) saveSignature,
+    required TResult Function(_GetSignature value) getSignature,
+    required TResult Function(_DeleteSignature value) deleteSignature,
+    required TResult Function(_SelectedSignature value) selectedSignature,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +66,10 @@ mixin _$SignDocumentEvent {
     TResult? Function(_SavePdf value)? savePdf,
     TResult? Function(_GetListPdf value)? getListPdf,
     TResult? Function(_DeletePdf value)? deletePdf,
+    TResult? Function(_SaveSignature value)? saveSignature,
+    TResult? Function(_GetSignature value)? getSignature,
+    TResult? Function(_DeleteSignature value)? deleteSignature,
+    TResult? Function(_SelectedSignature value)? selectedSignature,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +77,10 @@ mixin _$SignDocumentEvent {
     TResult Function(_SavePdf value)? savePdf,
     TResult Function(_GetListPdf value)? getListPdf,
     TResult Function(_DeletePdf value)? deletePdf,
+    TResult Function(_SaveSignature value)? saveSignature,
+    TResult Function(_GetSignature value)? getSignature,
+    TResult Function(_DeleteSignature value)? deleteSignature,
+    TResult Function(_SelectedSignature value)? selectedSignature,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -127,6 +151,10 @@ class _$SavePdfImpl implements _SavePdf {
     required TResult Function() savePdf,
     required TResult Function() getListPdf,
     required TResult Function(int index) deletePdf,
+    required TResult Function() saveSignature,
+    required TResult Function() getSignature,
+    required TResult Function(int index) deleteSignature,
+    required TResult Function(PdfEntitie sign) selectedSignature,
   }) {
     return savePdf();
   }
@@ -137,6 +165,10 @@ class _$SavePdfImpl implements _SavePdf {
     TResult? Function()? savePdf,
     TResult? Function()? getListPdf,
     TResult? Function(int index)? deletePdf,
+    TResult? Function()? saveSignature,
+    TResult? Function()? getSignature,
+    TResult? Function(int index)? deleteSignature,
+    TResult? Function(PdfEntitie sign)? selectedSignature,
   }) {
     return savePdf?.call();
   }
@@ -147,6 +179,10 @@ class _$SavePdfImpl implements _SavePdf {
     TResult Function()? savePdf,
     TResult Function()? getListPdf,
     TResult Function(int index)? deletePdf,
+    TResult Function()? saveSignature,
+    TResult Function()? getSignature,
+    TResult Function(int index)? deleteSignature,
+    TResult Function(PdfEntitie sign)? selectedSignature,
     required TResult orElse(),
   }) {
     if (savePdf != null) {
@@ -161,6 +197,10 @@ class _$SavePdfImpl implements _SavePdf {
     required TResult Function(_SavePdf value) savePdf,
     required TResult Function(_GetListPdf value) getListPdf,
     required TResult Function(_DeletePdf value) deletePdf,
+    required TResult Function(_SaveSignature value) saveSignature,
+    required TResult Function(_GetSignature value) getSignature,
+    required TResult Function(_DeleteSignature value) deleteSignature,
+    required TResult Function(_SelectedSignature value) selectedSignature,
   }) {
     return savePdf(this);
   }
@@ -171,6 +211,10 @@ class _$SavePdfImpl implements _SavePdf {
     TResult? Function(_SavePdf value)? savePdf,
     TResult? Function(_GetListPdf value)? getListPdf,
     TResult? Function(_DeletePdf value)? deletePdf,
+    TResult? Function(_SaveSignature value)? saveSignature,
+    TResult? Function(_GetSignature value)? getSignature,
+    TResult? Function(_DeleteSignature value)? deleteSignature,
+    TResult? Function(_SelectedSignature value)? selectedSignature,
   }) {
     return savePdf?.call(this);
   }
@@ -181,6 +225,10 @@ class _$SavePdfImpl implements _SavePdf {
     TResult Function(_SavePdf value)? savePdf,
     TResult Function(_GetListPdf value)? getListPdf,
     TResult Function(_DeletePdf value)? deletePdf,
+    TResult Function(_SaveSignature value)? saveSignature,
+    TResult Function(_GetSignature value)? getSignature,
+    TResult Function(_DeleteSignature value)? deleteSignature,
+    TResult Function(_SelectedSignature value)? selectedSignature,
     required TResult orElse(),
   }) {
     if (savePdf != null) {
@@ -238,6 +286,10 @@ class _$GetListPdfImpl implements _GetListPdf {
     required TResult Function() savePdf,
     required TResult Function() getListPdf,
     required TResult Function(int index) deletePdf,
+    required TResult Function() saveSignature,
+    required TResult Function() getSignature,
+    required TResult Function(int index) deleteSignature,
+    required TResult Function(PdfEntitie sign) selectedSignature,
   }) {
     return getListPdf();
   }
@@ -248,6 +300,10 @@ class _$GetListPdfImpl implements _GetListPdf {
     TResult? Function()? savePdf,
     TResult? Function()? getListPdf,
     TResult? Function(int index)? deletePdf,
+    TResult? Function()? saveSignature,
+    TResult? Function()? getSignature,
+    TResult? Function(int index)? deleteSignature,
+    TResult? Function(PdfEntitie sign)? selectedSignature,
   }) {
     return getListPdf?.call();
   }
@@ -258,6 +314,10 @@ class _$GetListPdfImpl implements _GetListPdf {
     TResult Function()? savePdf,
     TResult Function()? getListPdf,
     TResult Function(int index)? deletePdf,
+    TResult Function()? saveSignature,
+    TResult Function()? getSignature,
+    TResult Function(int index)? deleteSignature,
+    TResult Function(PdfEntitie sign)? selectedSignature,
     required TResult orElse(),
   }) {
     if (getListPdf != null) {
@@ -272,6 +332,10 @@ class _$GetListPdfImpl implements _GetListPdf {
     required TResult Function(_SavePdf value) savePdf,
     required TResult Function(_GetListPdf value) getListPdf,
     required TResult Function(_DeletePdf value) deletePdf,
+    required TResult Function(_SaveSignature value) saveSignature,
+    required TResult Function(_GetSignature value) getSignature,
+    required TResult Function(_DeleteSignature value) deleteSignature,
+    required TResult Function(_SelectedSignature value) selectedSignature,
   }) {
     return getListPdf(this);
   }
@@ -282,6 +346,10 @@ class _$GetListPdfImpl implements _GetListPdf {
     TResult? Function(_SavePdf value)? savePdf,
     TResult? Function(_GetListPdf value)? getListPdf,
     TResult? Function(_DeletePdf value)? deletePdf,
+    TResult? Function(_SaveSignature value)? saveSignature,
+    TResult? Function(_GetSignature value)? getSignature,
+    TResult? Function(_DeleteSignature value)? deleteSignature,
+    TResult? Function(_SelectedSignature value)? selectedSignature,
   }) {
     return getListPdf?.call(this);
   }
@@ -292,6 +360,10 @@ class _$GetListPdfImpl implements _GetListPdf {
     TResult Function(_SavePdf value)? savePdf,
     TResult Function(_GetListPdf value)? getListPdf,
     TResult Function(_DeletePdf value)? deletePdf,
+    TResult Function(_SaveSignature value)? saveSignature,
+    TResult Function(_GetSignature value)? getSignature,
+    TResult Function(_DeleteSignature value)? deleteSignature,
+    TResult Function(_SelectedSignature value)? selectedSignature,
     required TResult orElse(),
   }) {
     if (getListPdf != null) {
@@ -376,6 +448,10 @@ class _$DeletePdfImpl implements _DeletePdf {
     required TResult Function() savePdf,
     required TResult Function() getListPdf,
     required TResult Function(int index) deletePdf,
+    required TResult Function() saveSignature,
+    required TResult Function() getSignature,
+    required TResult Function(int index) deleteSignature,
+    required TResult Function(PdfEntitie sign) selectedSignature,
   }) {
     return deletePdf(index);
   }
@@ -386,6 +462,10 @@ class _$DeletePdfImpl implements _DeletePdf {
     TResult? Function()? savePdf,
     TResult? Function()? getListPdf,
     TResult? Function(int index)? deletePdf,
+    TResult? Function()? saveSignature,
+    TResult? Function()? getSignature,
+    TResult? Function(int index)? deleteSignature,
+    TResult? Function(PdfEntitie sign)? selectedSignature,
   }) {
     return deletePdf?.call(index);
   }
@@ -396,6 +476,10 @@ class _$DeletePdfImpl implements _DeletePdf {
     TResult Function()? savePdf,
     TResult Function()? getListPdf,
     TResult Function(int index)? deletePdf,
+    TResult Function()? saveSignature,
+    TResult Function()? getSignature,
+    TResult Function(int index)? deleteSignature,
+    TResult Function(PdfEntitie sign)? selectedSignature,
     required TResult orElse(),
   }) {
     if (deletePdf != null) {
@@ -410,6 +494,10 @@ class _$DeletePdfImpl implements _DeletePdf {
     required TResult Function(_SavePdf value) savePdf,
     required TResult Function(_GetListPdf value) getListPdf,
     required TResult Function(_DeletePdf value) deletePdf,
+    required TResult Function(_SaveSignature value) saveSignature,
+    required TResult Function(_GetSignature value) getSignature,
+    required TResult Function(_DeleteSignature value) deleteSignature,
+    required TResult Function(_SelectedSignature value) selectedSignature,
   }) {
     return deletePdf(this);
   }
@@ -420,6 +508,10 @@ class _$DeletePdfImpl implements _DeletePdf {
     TResult? Function(_SavePdf value)? savePdf,
     TResult? Function(_GetListPdf value)? getListPdf,
     TResult? Function(_DeletePdf value)? deletePdf,
+    TResult? Function(_SaveSignature value)? saveSignature,
+    TResult? Function(_GetSignature value)? getSignature,
+    TResult? Function(_DeleteSignature value)? deleteSignature,
+    TResult? Function(_SelectedSignature value)? selectedSignature,
   }) {
     return deletePdf?.call(this);
   }
@@ -430,6 +522,10 @@ class _$DeletePdfImpl implements _DeletePdf {
     TResult Function(_SavePdf value)? savePdf,
     TResult Function(_GetListPdf value)? getListPdf,
     TResult Function(_DeletePdf value)? deletePdf,
+    TResult Function(_SaveSignature value)? saveSignature,
+    TResult Function(_GetSignature value)? getSignature,
+    TResult Function(_DeleteSignature value)? deleteSignature,
+    TResult Function(_SelectedSignature value)? selectedSignature,
     required TResult orElse(),
   }) {
     if (deletePdf != null) {
@@ -452,9 +548,625 @@ abstract class _DeletePdf implements SignDocumentEvent {
 }
 
 /// @nodoc
+abstract class _$$SaveSignatureImplCopyWith<$Res> {
+  factory _$$SaveSignatureImplCopyWith(
+          _$SaveSignatureImpl value, $Res Function(_$SaveSignatureImpl) then) =
+      __$$SaveSignatureImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$SaveSignatureImplCopyWithImpl<$Res>
+    extends _$SignDocumentEventCopyWithImpl<$Res, _$SaveSignatureImpl>
+    implements _$$SaveSignatureImplCopyWith<$Res> {
+  __$$SaveSignatureImplCopyWithImpl(
+      _$SaveSignatureImpl _value, $Res Function(_$SaveSignatureImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of SignDocumentEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$SaveSignatureImpl implements _SaveSignature {
+  const _$SaveSignatureImpl();
+
+  @override
+  String toString() {
+    return 'SignDocumentEvent.saveSignature()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SaveSignatureImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() savePdf,
+    required TResult Function() getListPdf,
+    required TResult Function(int index) deletePdf,
+    required TResult Function() saveSignature,
+    required TResult Function() getSignature,
+    required TResult Function(int index) deleteSignature,
+    required TResult Function(PdfEntitie sign) selectedSignature,
+  }) {
+    return saveSignature();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? savePdf,
+    TResult? Function()? getListPdf,
+    TResult? Function(int index)? deletePdf,
+    TResult? Function()? saveSignature,
+    TResult? Function()? getSignature,
+    TResult? Function(int index)? deleteSignature,
+    TResult? Function(PdfEntitie sign)? selectedSignature,
+  }) {
+    return saveSignature?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? savePdf,
+    TResult Function()? getListPdf,
+    TResult Function(int index)? deletePdf,
+    TResult Function()? saveSignature,
+    TResult Function()? getSignature,
+    TResult Function(int index)? deleteSignature,
+    TResult Function(PdfEntitie sign)? selectedSignature,
+    required TResult orElse(),
+  }) {
+    if (saveSignature != null) {
+      return saveSignature();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_SavePdf value) savePdf,
+    required TResult Function(_GetListPdf value) getListPdf,
+    required TResult Function(_DeletePdf value) deletePdf,
+    required TResult Function(_SaveSignature value) saveSignature,
+    required TResult Function(_GetSignature value) getSignature,
+    required TResult Function(_DeleteSignature value) deleteSignature,
+    required TResult Function(_SelectedSignature value) selectedSignature,
+  }) {
+    return saveSignature(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_SavePdf value)? savePdf,
+    TResult? Function(_GetListPdf value)? getListPdf,
+    TResult? Function(_DeletePdf value)? deletePdf,
+    TResult? Function(_SaveSignature value)? saveSignature,
+    TResult? Function(_GetSignature value)? getSignature,
+    TResult? Function(_DeleteSignature value)? deleteSignature,
+    TResult? Function(_SelectedSignature value)? selectedSignature,
+  }) {
+    return saveSignature?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_SavePdf value)? savePdf,
+    TResult Function(_GetListPdf value)? getListPdf,
+    TResult Function(_DeletePdf value)? deletePdf,
+    TResult Function(_SaveSignature value)? saveSignature,
+    TResult Function(_GetSignature value)? getSignature,
+    TResult Function(_DeleteSignature value)? deleteSignature,
+    TResult Function(_SelectedSignature value)? selectedSignature,
+    required TResult orElse(),
+  }) {
+    if (saveSignature != null) {
+      return saveSignature(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SaveSignature implements SignDocumentEvent {
+  const factory _SaveSignature() = _$SaveSignatureImpl;
+}
+
+/// @nodoc
+abstract class _$$GetSignatureImplCopyWith<$Res> {
+  factory _$$GetSignatureImplCopyWith(
+          _$GetSignatureImpl value, $Res Function(_$GetSignatureImpl) then) =
+      __$$GetSignatureImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GetSignatureImplCopyWithImpl<$Res>
+    extends _$SignDocumentEventCopyWithImpl<$Res, _$GetSignatureImpl>
+    implements _$$GetSignatureImplCopyWith<$Res> {
+  __$$GetSignatureImplCopyWithImpl(
+      _$GetSignatureImpl _value, $Res Function(_$GetSignatureImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of SignDocumentEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$GetSignatureImpl implements _GetSignature {
+  const _$GetSignatureImpl();
+
+  @override
+  String toString() {
+    return 'SignDocumentEvent.getSignature()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GetSignatureImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() savePdf,
+    required TResult Function() getListPdf,
+    required TResult Function(int index) deletePdf,
+    required TResult Function() saveSignature,
+    required TResult Function() getSignature,
+    required TResult Function(int index) deleteSignature,
+    required TResult Function(PdfEntitie sign) selectedSignature,
+  }) {
+    return getSignature();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? savePdf,
+    TResult? Function()? getListPdf,
+    TResult? Function(int index)? deletePdf,
+    TResult? Function()? saveSignature,
+    TResult? Function()? getSignature,
+    TResult? Function(int index)? deleteSignature,
+    TResult? Function(PdfEntitie sign)? selectedSignature,
+  }) {
+    return getSignature?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? savePdf,
+    TResult Function()? getListPdf,
+    TResult Function(int index)? deletePdf,
+    TResult Function()? saveSignature,
+    TResult Function()? getSignature,
+    TResult Function(int index)? deleteSignature,
+    TResult Function(PdfEntitie sign)? selectedSignature,
+    required TResult orElse(),
+  }) {
+    if (getSignature != null) {
+      return getSignature();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_SavePdf value) savePdf,
+    required TResult Function(_GetListPdf value) getListPdf,
+    required TResult Function(_DeletePdf value) deletePdf,
+    required TResult Function(_SaveSignature value) saveSignature,
+    required TResult Function(_GetSignature value) getSignature,
+    required TResult Function(_DeleteSignature value) deleteSignature,
+    required TResult Function(_SelectedSignature value) selectedSignature,
+  }) {
+    return getSignature(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_SavePdf value)? savePdf,
+    TResult? Function(_GetListPdf value)? getListPdf,
+    TResult? Function(_DeletePdf value)? deletePdf,
+    TResult? Function(_SaveSignature value)? saveSignature,
+    TResult? Function(_GetSignature value)? getSignature,
+    TResult? Function(_DeleteSignature value)? deleteSignature,
+    TResult? Function(_SelectedSignature value)? selectedSignature,
+  }) {
+    return getSignature?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_SavePdf value)? savePdf,
+    TResult Function(_GetListPdf value)? getListPdf,
+    TResult Function(_DeletePdf value)? deletePdf,
+    TResult Function(_SaveSignature value)? saveSignature,
+    TResult Function(_GetSignature value)? getSignature,
+    TResult Function(_DeleteSignature value)? deleteSignature,
+    TResult Function(_SelectedSignature value)? selectedSignature,
+    required TResult orElse(),
+  }) {
+    if (getSignature != null) {
+      return getSignature(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetSignature implements SignDocumentEvent {
+  const factory _GetSignature() = _$GetSignatureImpl;
+}
+
+/// @nodoc
+abstract class _$$DeleteSignatureImplCopyWith<$Res> {
+  factory _$$DeleteSignatureImplCopyWith(_$DeleteSignatureImpl value,
+          $Res Function(_$DeleteSignatureImpl) then) =
+      __$$DeleteSignatureImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({int index});
+}
+
+/// @nodoc
+class __$$DeleteSignatureImplCopyWithImpl<$Res>
+    extends _$SignDocumentEventCopyWithImpl<$Res, _$DeleteSignatureImpl>
+    implements _$$DeleteSignatureImplCopyWith<$Res> {
+  __$$DeleteSignatureImplCopyWithImpl(
+      _$DeleteSignatureImpl _value, $Res Function(_$DeleteSignatureImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of SignDocumentEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? index = null,
+  }) {
+    return _then(_$DeleteSignatureImpl(
+      null == index
+          ? _value.index
+          : index // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$DeleteSignatureImpl implements _DeleteSignature {
+  const _$DeleteSignatureImpl(this.index);
+
+  @override
+  final int index;
+
+  @override
+  String toString() {
+    return 'SignDocumentEvent.deleteSignature(index: $index)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteSignatureImpl &&
+            (identical(other.index, index) || other.index == index));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, index);
+
+  /// Create a copy of SignDocumentEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DeleteSignatureImplCopyWith<_$DeleteSignatureImpl> get copyWith =>
+      __$$DeleteSignatureImplCopyWithImpl<_$DeleteSignatureImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() savePdf,
+    required TResult Function() getListPdf,
+    required TResult Function(int index) deletePdf,
+    required TResult Function() saveSignature,
+    required TResult Function() getSignature,
+    required TResult Function(int index) deleteSignature,
+    required TResult Function(PdfEntitie sign) selectedSignature,
+  }) {
+    return deleteSignature(index);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? savePdf,
+    TResult? Function()? getListPdf,
+    TResult? Function(int index)? deletePdf,
+    TResult? Function()? saveSignature,
+    TResult? Function()? getSignature,
+    TResult? Function(int index)? deleteSignature,
+    TResult? Function(PdfEntitie sign)? selectedSignature,
+  }) {
+    return deleteSignature?.call(index);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? savePdf,
+    TResult Function()? getListPdf,
+    TResult Function(int index)? deletePdf,
+    TResult Function()? saveSignature,
+    TResult Function()? getSignature,
+    TResult Function(int index)? deleteSignature,
+    TResult Function(PdfEntitie sign)? selectedSignature,
+    required TResult orElse(),
+  }) {
+    if (deleteSignature != null) {
+      return deleteSignature(index);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_SavePdf value) savePdf,
+    required TResult Function(_GetListPdf value) getListPdf,
+    required TResult Function(_DeletePdf value) deletePdf,
+    required TResult Function(_SaveSignature value) saveSignature,
+    required TResult Function(_GetSignature value) getSignature,
+    required TResult Function(_DeleteSignature value) deleteSignature,
+    required TResult Function(_SelectedSignature value) selectedSignature,
+  }) {
+    return deleteSignature(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_SavePdf value)? savePdf,
+    TResult? Function(_GetListPdf value)? getListPdf,
+    TResult? Function(_DeletePdf value)? deletePdf,
+    TResult? Function(_SaveSignature value)? saveSignature,
+    TResult? Function(_GetSignature value)? getSignature,
+    TResult? Function(_DeleteSignature value)? deleteSignature,
+    TResult? Function(_SelectedSignature value)? selectedSignature,
+  }) {
+    return deleteSignature?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_SavePdf value)? savePdf,
+    TResult Function(_GetListPdf value)? getListPdf,
+    TResult Function(_DeletePdf value)? deletePdf,
+    TResult Function(_SaveSignature value)? saveSignature,
+    TResult Function(_GetSignature value)? getSignature,
+    TResult Function(_DeleteSignature value)? deleteSignature,
+    TResult Function(_SelectedSignature value)? selectedSignature,
+    required TResult orElse(),
+  }) {
+    if (deleteSignature != null) {
+      return deleteSignature(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _DeleteSignature implements SignDocumentEvent {
+  const factory _DeleteSignature(final int index) = _$DeleteSignatureImpl;
+
+  int get index;
+
+  /// Create a copy of SignDocumentEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$DeleteSignatureImplCopyWith<_$DeleteSignatureImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$SelectedSignatureImplCopyWith<$Res> {
+  factory _$$SelectedSignatureImplCopyWith(_$SelectedSignatureImpl value,
+          $Res Function(_$SelectedSignatureImpl) then) =
+      __$$SelectedSignatureImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({PdfEntitie sign});
+}
+
+/// @nodoc
+class __$$SelectedSignatureImplCopyWithImpl<$Res>
+    extends _$SignDocumentEventCopyWithImpl<$Res, _$SelectedSignatureImpl>
+    implements _$$SelectedSignatureImplCopyWith<$Res> {
+  __$$SelectedSignatureImplCopyWithImpl(_$SelectedSignatureImpl _value,
+      $Res Function(_$SelectedSignatureImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of SignDocumentEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? sign = null,
+  }) {
+    return _then(_$SelectedSignatureImpl(
+      null == sign
+          ? _value.sign
+          : sign // ignore: cast_nullable_to_non_nullable
+              as PdfEntitie,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SelectedSignatureImpl implements _SelectedSignature {
+  const _$SelectedSignatureImpl(this.sign);
+
+  @override
+  final PdfEntitie sign;
+
+  @override
+  String toString() {
+    return 'SignDocumentEvent.selectedSignature(sign: $sign)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SelectedSignatureImpl &&
+            (identical(other.sign, sign) || other.sign == sign));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, sign);
+
+  /// Create a copy of SignDocumentEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SelectedSignatureImplCopyWith<_$SelectedSignatureImpl> get copyWith =>
+      __$$SelectedSignatureImplCopyWithImpl<_$SelectedSignatureImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() savePdf,
+    required TResult Function() getListPdf,
+    required TResult Function(int index) deletePdf,
+    required TResult Function() saveSignature,
+    required TResult Function() getSignature,
+    required TResult Function(int index) deleteSignature,
+    required TResult Function(PdfEntitie sign) selectedSignature,
+  }) {
+    return selectedSignature(sign);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? savePdf,
+    TResult? Function()? getListPdf,
+    TResult? Function(int index)? deletePdf,
+    TResult? Function()? saveSignature,
+    TResult? Function()? getSignature,
+    TResult? Function(int index)? deleteSignature,
+    TResult? Function(PdfEntitie sign)? selectedSignature,
+  }) {
+    return selectedSignature?.call(sign);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? savePdf,
+    TResult Function()? getListPdf,
+    TResult Function(int index)? deletePdf,
+    TResult Function()? saveSignature,
+    TResult Function()? getSignature,
+    TResult Function(int index)? deleteSignature,
+    TResult Function(PdfEntitie sign)? selectedSignature,
+    required TResult orElse(),
+  }) {
+    if (selectedSignature != null) {
+      return selectedSignature(sign);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_SavePdf value) savePdf,
+    required TResult Function(_GetListPdf value) getListPdf,
+    required TResult Function(_DeletePdf value) deletePdf,
+    required TResult Function(_SaveSignature value) saveSignature,
+    required TResult Function(_GetSignature value) getSignature,
+    required TResult Function(_DeleteSignature value) deleteSignature,
+    required TResult Function(_SelectedSignature value) selectedSignature,
+  }) {
+    return selectedSignature(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_SavePdf value)? savePdf,
+    TResult? Function(_GetListPdf value)? getListPdf,
+    TResult? Function(_DeletePdf value)? deletePdf,
+    TResult? Function(_SaveSignature value)? saveSignature,
+    TResult? Function(_GetSignature value)? getSignature,
+    TResult? Function(_DeleteSignature value)? deleteSignature,
+    TResult? Function(_SelectedSignature value)? selectedSignature,
+  }) {
+    return selectedSignature?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_SavePdf value)? savePdf,
+    TResult Function(_GetListPdf value)? getListPdf,
+    TResult Function(_DeletePdf value)? deletePdf,
+    TResult Function(_SaveSignature value)? saveSignature,
+    TResult Function(_GetSignature value)? getSignature,
+    TResult Function(_DeleteSignature value)? deleteSignature,
+    TResult Function(_SelectedSignature value)? selectedSignature,
+    required TResult orElse(),
+  }) {
+    if (selectedSignature != null) {
+      return selectedSignature(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SelectedSignature implements SignDocumentEvent {
+  const factory _SelectedSignature(final PdfEntitie sign) =
+      _$SelectedSignatureImpl;
+
+  PdfEntitie get sign;
+
+  /// Create a copy of SignDocumentEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$SelectedSignatureImplCopyWith<_$SelectedSignatureImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
 mixin _$SignDocumentState {
   List<PdfEntitie> get pdfs => throw _privateConstructorUsedError;
+  List<PdfEntitie> get signs => throw _privateConstructorUsedError;
   PdfStatus get status => throw _privateConstructorUsedError;
+  SignatureStatus get signatureStatus => throw _privateConstructorUsedError;
+  PdfEntitie? get selectedSignature => throw _privateConstructorUsedError;
 
   /// Create a copy of SignDocumentState
   /// with the given fields replaced by the non-null parameter values.
@@ -469,7 +1181,12 @@ abstract class $SignDocumentStateCopyWith<$Res> {
           SignDocumentState value, $Res Function(SignDocumentState) then) =
       _$SignDocumentStateCopyWithImpl<$Res, SignDocumentState>;
   @useResult
-  $Res call({List<PdfEntitie> pdfs, PdfStatus status});
+  $Res call(
+      {List<PdfEntitie> pdfs,
+      List<PdfEntitie> signs,
+      PdfStatus status,
+      SignatureStatus signatureStatus,
+      PdfEntitie? selectedSignature});
 }
 
 /// @nodoc
@@ -488,17 +1205,32 @@ class _$SignDocumentStateCopyWithImpl<$Res, $Val extends SignDocumentState>
   @override
   $Res call({
     Object? pdfs = null,
+    Object? signs = null,
     Object? status = null,
+    Object? signatureStatus = null,
+    Object? selectedSignature = freezed,
   }) {
     return _then(_value.copyWith(
       pdfs: null == pdfs
           ? _value.pdfs
           : pdfs // ignore: cast_nullable_to_non_nullable
               as List<PdfEntitie>,
+      signs: null == signs
+          ? _value.signs
+          : signs // ignore: cast_nullable_to_non_nullable
+              as List<PdfEntitie>,
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as PdfStatus,
+      signatureStatus: null == signatureStatus
+          ? _value.signatureStatus
+          : signatureStatus // ignore: cast_nullable_to_non_nullable
+              as SignatureStatus,
+      selectedSignature: freezed == selectedSignature
+          ? _value.selectedSignature
+          : selectedSignature // ignore: cast_nullable_to_non_nullable
+              as PdfEntitie?,
     ) as $Val);
   }
 }
@@ -511,7 +1243,12 @@ abstract class _$$SignDocumentStateImplCopyWith<$Res>
       __$$SignDocumentStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({List<PdfEntitie> pdfs, PdfStatus status});
+  $Res call(
+      {List<PdfEntitie> pdfs,
+      List<PdfEntitie> signs,
+      PdfStatus status,
+      SignatureStatus signatureStatus,
+      PdfEntitie? selectedSignature});
 }
 
 /// @nodoc
@@ -528,17 +1265,32 @@ class __$$SignDocumentStateImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? pdfs = null,
+    Object? signs = null,
     Object? status = null,
+    Object? signatureStatus = null,
+    Object? selectedSignature = freezed,
   }) {
     return _then(_$SignDocumentStateImpl(
       pdfs: null == pdfs
           ? _value._pdfs
           : pdfs // ignore: cast_nullable_to_non_nullable
               as List<PdfEntitie>,
+      signs: null == signs
+          ? _value._signs
+          : signs // ignore: cast_nullable_to_non_nullable
+              as List<PdfEntitie>,
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as PdfStatus,
+      signatureStatus: null == signatureStatus
+          ? _value.signatureStatus
+          : signatureStatus // ignore: cast_nullable_to_non_nullable
+              as SignatureStatus,
+      selectedSignature: freezed == selectedSignature
+          ? _value.selectedSignature
+          : selectedSignature // ignore: cast_nullable_to_non_nullable
+              as PdfEntitie?,
     ));
   }
 }
@@ -547,8 +1299,13 @@ class __$$SignDocumentStateImplCopyWithImpl<$Res>
 
 class _$SignDocumentStateImpl implements _SignDocumentState {
   const _$SignDocumentStateImpl(
-      {final List<PdfEntitie> pdfs = const [], this.status = PdfStatus.initial})
-      : _pdfs = pdfs;
+      {final List<PdfEntitie> pdfs = const [],
+      final List<PdfEntitie> signs = const [],
+      this.status = PdfStatus.initial,
+      this.signatureStatus = SignatureStatus.initial,
+      this.selectedSignature})
+      : _pdfs = pdfs,
+        _signs = signs;
 
   final List<PdfEntitie> _pdfs;
   @override
@@ -559,13 +1316,27 @@ class _$SignDocumentStateImpl implements _SignDocumentState {
     return EqualUnmodifiableListView(_pdfs);
   }
 
+  final List<PdfEntitie> _signs;
+  @override
+  @JsonKey()
+  List<PdfEntitie> get signs {
+    if (_signs is EqualUnmodifiableListView) return _signs;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_signs);
+  }
+
   @override
   @JsonKey()
   final PdfStatus status;
+  @override
+  @JsonKey()
+  final SignatureStatus signatureStatus;
+  @override
+  final PdfEntitie? selectedSignature;
 
   @override
   String toString() {
-    return 'SignDocumentState(pdfs: $pdfs, status: $status)';
+    return 'SignDocumentState(pdfs: $pdfs, signs: $signs, status: $status, signatureStatus: $signatureStatus, selectedSignature: $selectedSignature)';
   }
 
   @override
@@ -574,12 +1345,22 @@ class _$SignDocumentStateImpl implements _SignDocumentState {
         (other.runtimeType == runtimeType &&
             other is _$SignDocumentStateImpl &&
             const DeepCollectionEquality().equals(other._pdfs, _pdfs) &&
-            (identical(other.status, status) || other.status == status));
+            const DeepCollectionEquality().equals(other._signs, _signs) &&
+            (identical(other.status, status) || other.status == status) &&
+            (identical(other.signatureStatus, signatureStatus) ||
+                other.signatureStatus == signatureStatus) &&
+            (identical(other.selectedSignature, selectedSignature) ||
+                other.selectedSignature == selectedSignature));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(_pdfs), status);
+      runtimeType,
+      const DeepCollectionEquality().hash(_pdfs),
+      const DeepCollectionEquality().hash(_signs),
+      status,
+      signatureStatus,
+      selectedSignature);
 
   /// Create a copy of SignDocumentState
   /// with the given fields replaced by the non-null parameter values.
@@ -594,12 +1375,21 @@ class _$SignDocumentStateImpl implements _SignDocumentState {
 abstract class _SignDocumentState implements SignDocumentState {
   const factory _SignDocumentState(
       {final List<PdfEntitie> pdfs,
-      final PdfStatus status}) = _$SignDocumentStateImpl;
+      final List<PdfEntitie> signs,
+      final PdfStatus status,
+      final SignatureStatus signatureStatus,
+      final PdfEntitie? selectedSignature}) = _$SignDocumentStateImpl;
 
   @override
   List<PdfEntitie> get pdfs;
   @override
+  List<PdfEntitie> get signs;
+  @override
   PdfStatus get status;
+  @override
+  SignatureStatus get signatureStatus;
+  @override
+  PdfEntitie? get selectedSignature;
 
   /// Create a copy of SignDocumentState
   /// with the given fields replaced by the non-null parameter values.

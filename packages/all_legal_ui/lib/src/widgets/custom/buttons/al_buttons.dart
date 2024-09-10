@@ -62,7 +62,7 @@ class AlPrimaryButton extends StatelessWidget {
   const AlPrimaryButton({
     required this.text,
     super.key,
-    this.borderRadius = borderRadius16,
+    this.borderRadius = borderRadius4,
     this.onPressed,
   });
 
@@ -73,10 +73,13 @@ class AlPrimaryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlBaseButton(
+      withoutAnySize: true,
       borderRadius: borderRadius,
-      color: context.theme.primaryColor,
+      color: context.colorScheme.onSurface,
       onPressed: onPressed ?? () {},
-      child: Text(text, style: context.primaryButtons),
+      child: Text(text,
+          style: context.primaryButtons
+              ?.copyWith(color: context.colorScheme.onSecondary)),
     );
   }
 }

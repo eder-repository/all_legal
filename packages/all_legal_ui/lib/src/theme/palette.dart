@@ -26,4 +26,6 @@ final class Palette {
   static const Color darkCyan = Color(0xFF60A6D6);
 
   static const Color moderateBlue = Color(0xFF3C8CCD);
+
+  static const Color red = Colors.red;
 }
