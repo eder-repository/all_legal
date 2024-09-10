@@ -1,0 +1,65 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "all_legal",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "all_legal (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "all_legal (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "all_legal_core",
+            "cwd": "packages/all_legal_core",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "all_legal_core (profile mode)",
+            "cwd": "packages/all_legal_core",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "all_legal_core (release mode)",
+            "cwd": "packages/all_legal_core",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "all_legal_ui",
+            "cwd": "packages/all_legal_ui",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "all_legal_ui (profile mode)",
+            "cwd": "packages/all_legal_ui",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "all_legal_ui (release mode)",
+            "cwd": "packages/all_legal_ui",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
