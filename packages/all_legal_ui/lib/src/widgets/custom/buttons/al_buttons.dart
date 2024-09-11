@@ -64,11 +64,13 @@ class AlPrimaryButton extends StatelessWidget {
     super.key,
     this.borderRadius = borderRadius4,
     this.onPressed,
+    this.icon,
   });
 
   final BorderRadiusGeometry borderRadius;
   final VoidCallback? onPressed;
   final String text;
+  final Widget? icon;
 
   @override
   Widget build(BuildContext context) {
@@ -77,9 +79,16 @@ class AlPrimaryButton extends StatelessWidget {
       borderRadius: borderRadius,
       color: context.colorScheme.onSurface,
       onPressed: onPressed ?? () {},
-      child: Text(text,
-          style: context.primaryButtons
-              ?.copyWith(color: context.colorScheme.onSecondary)),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          if (icon != null) icon!,
+          space10,
+          Text(text,
+              style: context.primaryButtons
+                  ?.copyWith(color: context.colorScheme.onSecondary)),
+        ],
+      ),
     );
   }
 }
