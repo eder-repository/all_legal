@@ -1,0 +1,14 @@
+{
+    "home": {
+        "welcome": "Welcome",
+        "dashboard": "Dashboard",
+        "whatDoYouWant": "What do you want to do?",
+        "signDocuments": "Sign Documents",
+        "signElectronicDocuments": "Sign electronic documents and request third party signatures",
+        "requestAaccessInformation": "Requests for access to information",
+        "youHaveRequests": "You have {{count}} requests for access to your personal information",
+        "managingPersonalInformation": "Managing personal information",
+        "updateInformation": "Update information, request access, rectification, deletion",
+        "aProductOf": "{{name}} - A product of"
+    }
+}

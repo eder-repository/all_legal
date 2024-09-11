@@ -1,0 +1,14 @@
+{
+    "home": {
+        "welcome": "Bienvenido",
+        "dashboard": "Tablero",
+        "whatDoYouWant": "¿Qué quieres hacer?",
+        "signDocuments": "Firmar Documentos",
+        "signElectronicDocuments": "Firmar Documentos electronicos y solicita firma de terceros",
+        "requestAaccessInformation": "Solicitudes de acceso a información",
+        "youHaveRequests": "Tienes {{count}} solicitudes de acceso a tu información personal",
+        "managingPersonalInformation": "Gestionar información personal",
+        "updateInformation": "Actualiza información, solicita acceso, rectificación, eliminación",
+        "aProductOf": "{{name}} - Un producto de "
+    }
+}
