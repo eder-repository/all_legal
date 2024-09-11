@@ -33,6 +33,8 @@ final class AlTheme {
 
   static const _red = Palette.red;
 
+  static const _green = Palette.green;
+
   static final light = FlexThemeData.light(
     colors: _gcFlexSchemeData.light,
   ).copyWith(
@@ -47,6 +49,7 @@ final class AlTheme {
         tertiary: _smokeGray,
         onSecondary: _white,
         onSurface: _moderateBlue,
+        onPrimaryContainer: _green,
         surface: _red),
     appBarTheme: const AppBarTheme(
       backgroundColor: _lightGrayishCyan,

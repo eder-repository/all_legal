@@ -1,4 +1,4 @@
-import 'package:all_legal/src/features/sign_document/presentation/bloc/bloc/sign_document_bloc.dart';
+import 'package:all_legal/src/features/sign_document/presentation/bloc/sign_document/sign_document_bloc.dart';
 import 'package:all_legal_core/all_legal_core.dart';
 import 'package:all_legal_ui/all_legal_ui.dart';
 import 'package:flutter/material.dart';
