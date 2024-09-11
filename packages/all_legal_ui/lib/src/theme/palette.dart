@@ -28,4 +28,6 @@ final class Palette {
   static const Color moderateBlue = Color(0xFF3C8CCD);
 
   static const Color red = Colors.red;
+
+  static const Color green = Colors.green;
 }
