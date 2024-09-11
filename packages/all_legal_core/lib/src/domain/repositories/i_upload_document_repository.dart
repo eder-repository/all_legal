@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:all_legal_core/src/domain/entities/pdf_entitie.dart';
 
 abstract class IUploadDocumentRepository {
@@ -12,4 +14,8 @@ abstract class IUploadDocumentRepository {
   Future<List<PdfEntitie>> getSignature();
 
   Future<bool?> deleteSignature(int index);
+
+  Future<bool?> savePdfSigned(File file);
+
+  Future<List<PdfEntitie>> getPdfSigned();
 }

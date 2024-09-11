@@ -34,7 +34,7 @@ final class TextStyles {
 
   static final TextStyle _bodyLarge = _titleLarge.copyWith(
     fontWeight: AppFontWeight.regular,
-    color: Palette.white.withOpacity(.6),
+    color: Palette.moderateBlue,
   );
 
   static final TextStyle _titleMedium = _titleLarge.copyWith(
