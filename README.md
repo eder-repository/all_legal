@@ -153,8 +153,8 @@ Update the `CFBundleLocalizations` array in the `Info.plist` at `ios/Runner/Info
 
 ```json
 {
-    "appName": "GigFomo",
-    "events": "Events"
+    "appName": "AllLegal",
+    "events": "home"
 }
 ```
 
@@ -162,8 +162,8 @@ Update the `CFBundleLocalizations` array in the `Info.plist` at `ios/Runner/Info
 
 ```json
 {
-    "appName": "GigFomo",
-    "events": "Eventos"
+    "appName": "AllLegal",
+    "events": "home"
 }
 ```
 
