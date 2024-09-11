@@ -1,4 +1,5 @@
 import 'package:all_legal/src/core/core.dart';
+import 'package:all_legal_ui/all_legal_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -26,9 +27,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: CircularProgressIndicator(),
+        child: Assets.png.allLegal.image(),
       ),
     );
   }
