@@ -10,4 +10,8 @@ class SignDocumentEvent with _$SignDocumentEvent {
   const factory SignDocumentEvent.deleteSignature(int index) = _DeleteSignature;
   const factory SignDocumentEvent.selectedSignature(PdfEntitie sign) =
       _SelectedSignature;
+
+  const factory SignDocumentEvent.savePdfSigned(File file) = _SavePdfSigned;
+
+  const factory SignDocumentEvent.getPdfSigned() = _GetPdfSigned;
 }
