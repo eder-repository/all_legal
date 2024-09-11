@@ -92,4 +92,30 @@ class UploadDocumentRepository implements IUploadDocumentRepository {
     }
     return null;
   }
+
+  @override
+  Future<bool?> savePdfSigned(File file) async {
+    try {
+      final pdfData = await file.readAsBytes();
+
+      // Guarda la ruta del archivo en un modelo PDF
+      PdfEntitie pdf = PdfEntitie(filePath: file.path, pdfData: pdfData);
+
+      // Abre o crea una caja Hive para almacenar PDFs
+
+      var box = await Hive.openBox<PdfEntitie>('pdfs-signed');
+
+      // Agrega el PDF a la caja
+      await box.add(pdf);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  @override
+  Future<List<PdfEntitie>> getPdfSigned() async {
+    var box = await Hive.openBox<PdfEntitie>('pdfs-signed');
+    return box.values.toList();
+  }
 }
