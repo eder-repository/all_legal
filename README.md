@@ -180,3 +180,20 @@ $ dart run slang
 ---
 
 [slang_link]: https://pub.dev/packages/slang
+
+
+#Example app
+
+<table>
+  <tr>
+  <td> 1 </td>
+  <td> 2 </td>
+	  <td> 3 </td>
+  </tr>
+  <tr>
+<td><img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2tkZWk3a2hyaHNscnp6eTAzOXowcGc5dWxhbjNvNmxxZXF5OGFsaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaFZMn04onL29PhuZ2/giphy.gif" width="222" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></img></td>
+  <td><img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHVib2g5OTRibjlxYXk0bWhoMDF5Mm1lbGE1cjg5bnQ2dm9jaDA0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yz2OtxxgsbhgpqeK2s/giphy.gif" width="222" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></img></td>
+	<td><img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnh2b3N3NDAycmhxZGJ2enpveGl1c2VhYjQzYjRndnRuMmt4YmkyOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/72hPPZSOCx02PdvgAn/giphy.gif" width="222" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></img></td>
+
+  </tr>
+  </table>
