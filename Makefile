@@ -4,3 +4,6 @@ flutter_gen:
 
 al_build:
 	flutter pub get packages && flutter pub run build_runner build --delete-conflicting-outputs 
+
+al_slang:
+	dart run slang
